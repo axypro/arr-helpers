@@ -83,4 +83,9 @@ class ArrayPathSetTest extends BaseTestCase
             ['y' => 4, 'x' => ['y' => ['z' => 'value']]],
         ], ArrayPathHelper::setForAll($input, ['x', 'y', 'z'], 'value'));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayPathHelper::setForAll(3, null));
+    }
 }

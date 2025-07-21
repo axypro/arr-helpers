@@ -30,4 +30,9 @@ class ArrayFilterAllTest extends BaseTestCase
 
         $this->assertFalse(ArrayFilterHelper::all($input, 2, path: 'y'));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame(false, ArrayFilterHelper::all(3));
+    }
 }

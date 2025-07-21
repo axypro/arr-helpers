@@ -46,4 +46,10 @@ class ArrayFilterFirstTest extends BaseTestCase
         $this->assertSame(null, ArrayFilterHelper::first($input, callback: 33, path: 'y'));
         $this->assertFalse(ArrayFilterHelper::any($input, callback: 33, path: 'x'));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame(null, ArrayFilterHelper::first(3));
+        $this->assertFalse(ArrayFilterHelper::any(3));
+    }
 }

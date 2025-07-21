@@ -56,4 +56,9 @@ class ArrayKeysToKeyTest extends BaseTestCase
             20 => 28,
         ], ArrayKeysHelper::toKey($input, ['user', 'id'], ['user', 'age'], 18));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayKeysHelper::toKey(3));
+    }
 }

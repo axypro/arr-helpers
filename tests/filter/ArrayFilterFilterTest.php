@@ -80,4 +80,9 @@ class ArrayFilterFilterTest extends BaseTestCase
             path: 'x',
         ));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayFilterHelper::filter(3));
+    }
 }

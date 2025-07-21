@@ -95,4 +95,9 @@ class ArraySortSortTest extends BaseTestCase
             'two' => ['a' => 7],
         ], ArraySortHelper::sort($input, path: 'a', default: 3, desc: true, sorter: $sorter));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArraySortHelper::sort(5));
+    }
 }

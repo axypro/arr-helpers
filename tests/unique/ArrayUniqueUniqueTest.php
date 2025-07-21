@@ -114,4 +114,9 @@ class ArrayUniqueUniqueTest extends BaseTestCase
             25,
         ], ArrayUniqueHelper::unique($input, path: $path));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayUniqueHelper::unique(5));
+    }
 }

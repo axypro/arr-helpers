@@ -85,4 +85,9 @@ class ArrayPathDeleteTest extends BaseTestCase
             'three' => [],
         ], ArrayPathHelper::deleteFromAll($input, ['a', 'b']));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayPathHelper::deleteFromAll(3, null));
+    }
 }

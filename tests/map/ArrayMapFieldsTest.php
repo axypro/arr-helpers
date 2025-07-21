@@ -118,4 +118,17 @@ class ArrayMapFieldsTest extends BaseTestCase
             'unk' => 5,
         ]));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayMapHelper::fields(3, [], []));
+    }
+
+    public function testWrongCols(): void
+    {
+        $this->assertSame([
+            'x' => [],
+            'y' => [],
+        ], ArrayMapHelper::fields(['x' => 1, 'y' => 2], null, null));
+    }
 }

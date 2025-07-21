@@ -56,4 +56,9 @@ class ArrayMapMapTest extends BaseTestCase
             'three' => ['sum' => 9],
         ], ArrayMapHelper::map($input, $callback, path: ['a', 'b'], default: [4, 5]));
     }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayMapHelper::map(3, 'trim'));
+    }
 }

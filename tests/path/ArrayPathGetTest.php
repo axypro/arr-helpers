@@ -122,4 +122,20 @@ class ArrayPathGetTest extends BaseTestCase
             'd' => 10,
         ], ArrayPathHelper::getOfAll($input, $path, 15));
     }
+
+    public function testReturnSelf(): void
+    {
+        $input = [
+            'a' => ['x' => 1],
+            'b' => ['x' => 2],
+            'c' => ['x' => 3],
+        ];
+        $this->assertSame($input, ArrayPathHelper::getOfAll($input, [], 'default'));
+        $this->assertSame($input, ArrayPathHelper::getOfAll($input, null, 'default'));
+    }
+
+    public function testWrongInput(): void
+    {
+        $this->assertSame([], ArrayPathHelper::getOfAll(3, null));
+    }
 }
