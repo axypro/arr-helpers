@@ -16,7 +16,7 @@ final class ArraySortHelper
         ?bool $isDictionary = null,
     ): array {
         if (!is_array($input)) {
-            return $input;
+            return [];
         }
         $values = $input;
         $isPathUsed = (($path !== null) && ($path !== []));
