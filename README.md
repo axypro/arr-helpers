@@ -4,7 +4,7 @@
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.4-8892BF.svg?style=flat-square)](https://php.net/)
 [![Tests](https://github.com/axypro/arr-helpers/actions/workflows/test.yml/badge.svg)](https://github.com/axypro/arr-helpers/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/axypro/arr-helpers/badge.svg?branch=main)](https://coveralls.io/github/axypro/arr-helpers?branch=main)
-[![License](https://poser.pugx.org/axy/arr-helpers/license)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Just some helpers for array transformations.
 Used, for example, in `axy/arr`.
