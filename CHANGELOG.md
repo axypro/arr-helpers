@@ -4,9 +4,9 @@
 
 ## 0.1.0 (21 July 2025)
 
-* `ArrayPathHelper`
-* `ArrayMapHelper`
-* `ArrayFilterHelper`
-* `ArrayUniqueHelper`
-* `ArrayKeysHelper`
-* `ArrayConverterHelper`
+* [ArrayPathHelper](doc/path.md)
+* [ArrayMapHelper](doc/map.md)
+* [ArrayFilterHelper](doc/filter.md)
+* [ArrayUniqueHelper](doc/unique.md)
+* [ArrayKeysHelper](doc/keys.md)
+* [ArrayConverterHelper](doc/converter.md)
